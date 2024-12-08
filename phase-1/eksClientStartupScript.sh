@@ -15,7 +15,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 # Install Git
 sudo yum install git -y
-sudo git clone https://github.com/tarang1998/EKS-and-Monitoring-with-OpenTelemetry.git
+sudo git clone https://github.com/ashishsalunkhe/EKS-Open-Telemetry.git
 
 
 
