@@ -23,7 +23,7 @@ managedNodeGroups:
     labels: { role: workers }
     instanceType: t3.large
     desiredCapacity: 3
-    volumeSize: 16
+    volumeSize: 20
     minSize: 2
     maxSize: 4
     ssh:
