@@ -1,0 +1,34 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: openTelemetryCluster
+  region: us-east-1
+  version: "1.31" # The version of kubernetes to use  
+   
+iamIdentityMappings:
+  - arn: arn:aws:iam::476114124251:role/EKSClientRole
+    groups:
+      - system:masters
+    username: admin
+    noDuplicateARNs: true
+  - arn: arn:aws:iam::476114124251:user/root  
+    groups:
+      - system:masters 
+    username: root
+    noDuplicateARNs: true
+
+managedNodeGroups:
+  - name: ng-1
+    labels: { role: workers }
+    instanceType: t3.large
+    desiredCapacity: 3
+    volumeSize: 16
+    minSize: 2
+    maxSize: 4
+    ssh:
+      allow: true
+      publicKeyName : SSH1 # The access key should be present in the same region as the EKS Cluster
+   
+
+
