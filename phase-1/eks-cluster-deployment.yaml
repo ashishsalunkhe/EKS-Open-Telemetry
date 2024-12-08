@@ -28,7 +28,7 @@ managedNodeGroups:
     maxSize: 4
     ssh:
       allow: true
-      publicKeyName : SSH1 # The access key should be present in the same region as the EKS Cluster
+      publicKeyName : eks-telemetry-key # The access key should be present in the same region as the EKS Cluster
    
 
 
