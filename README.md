@@ -562,7 +562,7 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
     $ helm version
 
   
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/1.png)
+![](/phase-3/screenshots/1.png)
 
   
 
@@ -570,18 +570,18 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
 
     $ helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/2.png)
+![](/phase-3/screenshots/2.png)
   
 
 **Creating new namespace:**
 
     $ kubectl create namespace otel-demo-helm
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/3.png)
+![](/phase-3/screenshots/3.png)
 
 **Install**
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/4.png)
+![](/phase-3/screenshots/4.png)
 
   
 
@@ -589,19 +589,19 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
 
     helm list -n <namespace>
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/5.png)
+![](/phase-3/screenshots/5.png)
 
   
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/6.png)
+![](/phase-3/screenshots/6.png)
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/7.png)
+![](/phase-3/screenshots/7.png)
 
 **Identify the revision history for the deployed Helm release:**
 
     helm history otel-demo --namespace otel-demo-helm
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/8.png)
+![](/phase-3/screenshots/8.png)
 
   
 
@@ -611,7 +611,7 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
 
   
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/9.png)
+![](/phase-3/screenshots/9.png)
 
   
   
@@ -622,7 +622,7 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
 
   
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/10.png)
+![](/phase-3/screenshots/10.png)
 
   
 
@@ -631,9 +631,9 @@ Simplify the deployment and management of Kubernetes resources by leveraging Hel
     kubectl get deployment otel-demo-frontendproxy -n otel-demo-helm
 
   
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/11.png)
+![](/phase-3/screenshots/11.png)
 
   
 
-![](/Users/ashishsalunkhe/My Projects/EKS-Open-Telemetry/phase-3/screenshots/12.png)
+![](/phase-3/screenshots/12.png)
 
